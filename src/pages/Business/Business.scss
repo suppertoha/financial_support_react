@@ -1,0 +1,249 @@
+// wrapper-businessn
+
+.wrapper-business {
+  top: -111px;
+
+  .main-form {
+    transform: translateY(-14%);
+
+    @media screen and (max-width: 991px) {
+      transform: translateY(10%);
+    }
+  }
+
+  .cart {
+    width: 400px;
+
+    @media screen and (max-width: 991px) {
+      width: 100%;
+
+      .cart__description {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__header {
+      margin-bottom: 0px;
+    }
+
+    &__content {
+      flex-direction: column;
+      justify-content: space-between;
+
+      @media screen and (max-width: 991px) {
+        margin-bottom: 10px;
+        span {
+          display: none;
+        }
+      }
+    }
+
+    &__text {
+      display: none;
+    }
+
+    &__data {
+      margin: 0 0 24px;
+      @media screen and (max-width: 991px) {
+        margin-bottom: 15px;
+      }
+    }
+
+    .cart__content {
+      .cart__items {
+        &:last-child {
+          .cart__description {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  .slider {
+    background: url(../../../public/images/business_pc.png) 50% / cover no-repeat;
+    min-height: 940px;
+
+    @media screen and (max-width: 991px) {
+      background: url(../../../public/images/main-depositits2.png) 50% no-repeat;
+      background-size: cover;
+      min-height: 410px;
+    }
+
+    .cart-mini__title {
+      margin-bottom: 34px;
+      font-weight: 400;
+      font-size: 18px;
+    }
+
+    .cart-mini__inner {
+      display: block;
+
+      .cart-big__items {
+        grid-template-columns: repeat(2, 400px);
+        justify-content: center;
+      }
+    }
+
+    .cart-mini__items {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      @media screen and (max-width: 991px) {
+        .cart-big {
+          width: 100%;
+        }
+      }
+    }
+
+    .cart__content {
+      margin: 0;
+    }
+  }
+
+  .cart-mini {
+    margin-top: 64px;
+    &__inner {
+      margin: 0;
+    }
+  }
+
+  .cart-mini-pc {
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  .cart-mini-mobi {
+    display: none;
+
+    @media screen and (max-width: 991px) {
+      display: block;
+      margin-top: 58px;
+
+      .cart-mini__title {
+        font-weight: 400;
+        font-size: 14px;
+        margin-bottom: 0px;
+      }
+
+      .cart__items {
+        width: 100%;
+      }
+    }
+  }
+
+  .work {
+    margin-top: 40px;
+
+    @media screen and (max-width: 991px) {
+      > .container {
+        padding: 0 24px;
+      }
+
+      .button {
+        width: 272px;
+        height: 40px;
+        font-size: 16px;
+      }
+    }
+
+    &__innder {
+      justify-content: center;
+    }
+
+    &__block {
+      width: 100%;
+      justify-content: space-between;
+      padding-left: 100px;
+
+      @media screen and (max-width: 991px) {
+        padding: 0;
+      }
+    }
+
+    &__content {
+      @media screen and (max-width: 991px) {
+        margin: 280px auto 0px;
+      }
+    }
+
+    &__text {
+      max-width: 440px;
+
+      @media screen and (max-width: 991px) {
+        margin-bottom: 32px;
+      }
+    }
+
+    &__images {
+      width: 416px;
+      margin: 0;
+
+      @media screen and (max-width: 991px) {
+        width: 324px;
+      }
+    }
+
+    .button {
+      display: flex;
+    }
+  }
+
+  .banner {
+    margin-top: 200px;
+    &__inner {
+      background: url(../../../public/images/banner-depodits.png) no-repeat;
+      border-radius: 16px;
+      padding: 49px 45px;
+      min-height: 330px;
+      background-size: cover;
+
+      @media screen and (max-width: 991px) {
+        background: url(../../../public/images/banner-depodits2.png) no-repeat;
+        padding: 20px;
+
+        &.cart {
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &__inner {
+      width: 100%;
+    }
+
+    &__title {
+      max-width: 416px;
+    }
+
+    @media screen and (max-width: 1300px) {
+      margin-top: 90px;
+    }
+
+    @media screen and (max-width: 991px) {
+      margin-top: 40px;
+    }
+
+    @media screen and (max-width: 991px) {
+      .banner__subtitle {
+        line-height: 24px;
+        margin-bottom: 8px;
+      }
+
+      &__inner {
+        background-size: cover;
+      }
+    }
+  }
+
+  .paizick {
+    margin: 0;
+    &__items {
+      margin: 0;
+    }
+  }
+}

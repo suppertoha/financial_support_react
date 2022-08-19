@@ -1,0 +1,84 @@
+// Radio
+
+.radio {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  width: 100%;
+
+  @media screen and (max-width: 991px) {
+    margin-bottom: 16px;
+  }
+
+  ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    @media screen and (max-width: 1300px) {
+      flex-direction: column;
+    }
+  }
+
+  li {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding-left: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      border: #e9271d;
+      border-radius: 50%;
+      background: #e9271d url(../../../public/images/arrow_checked.svg) 50% 50% no-repeat;
+      //transition: 300ms;
+      transition: opacity 0.3s;
+      opacity: 0;
+      z-index: 2;
+    }
+
+    &.active {
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    @media screen and (max-width: 1300px) {
+      margin-bottom: 16px;
+      
+      &:last-child{
+        margin: 0;
+      }
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  &__name {
+    padding-left: 40px;
+  }
+}

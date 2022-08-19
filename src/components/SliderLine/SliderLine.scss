@@ -1,0 +1,125 @@
+.slide {
+  .spectrum-Slider_e4b6ba.spectrum-Slider--positionTop_e4b6ba {
+    width: 100% !important;
+    flex-grow: 10;
+    display: flex;
+  }
+
+  .spectrum-Slider-label_e4b6ba,
+  .spectrum-Dial-label_e4b6ba {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 991px) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      margin: 0;
+    }
+  }
+
+  .spectrum-Slider-value_e4b6ba {
+    min-width: 0% !important;
+    width: 100% !important;
+  }
+
+  .spectrum-Slider-labelContainer_e4b6ba {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .spectrum-Slider-handle_e4b6ba,
+  .spectrum-Dial-handle_e4b6ba {
+    border-style: none !important;
+  }
+
+  .spectrum-Slider-handle_e4b6ba {
+    position: relative;
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 20px !important;
+      height: 24px !important;
+      position: absolute;
+      top: -15px;
+      left: -10px;
+      cursor: pointer;
+    }
+  }
+
+  &__bg {
+    .spectrum-Slider-value_e4b6ba {
+      background-color: #424448;
+      opacity: 1;
+      border-radius: 8px;
+      font-weight: 300;
+      font-size: 32px;
+      letter-spacing: 0.4px;
+      color: #ffffff;
+      padding: 16px 24px;
+
+      @media screen and (max-width: 991px) {
+        font-size: 16px;
+        padding: 10px 14px;
+      }
+    }
+
+    .spectrum-Slider-handle_e4b6ba {
+      &::after {
+        background: url(../../../public/images/arrow-red-calculator.png) 50% / cover no-repeat !important;
+      }
+    }
+  }
+
+  &__transparent {
+    width: 510px;
+    .spectrum-Slider-value_e4b6ba {
+      background-color: transparent;
+      width: 510px !important;
+      opacity: 1;
+      border: 2px solid #ffffff;
+      border-radius: 16px;
+      font-weight: 300;
+      font-size: 32px;
+      letter-spacing: 0.4px;
+      color: #ffffff;
+      padding: 13px 24px;
+
+      @media screen and (max-width: 1300px) {
+        width: 400px !important;
+      }
+
+      @media screen and (max-width: 991px) {
+        font-size: 16px;
+        padding: 10px 14px;
+        width: 100% !important;
+
+        &:before {
+          font-size: 16px !important;
+          left: 95px;
+          top: 11px;
+        }
+      }
+
+    }
+    
+    @media screen and (max-width: 1300px) {
+      width: 400px;
+    }
+
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+
+    .spectrum-Slider-handle_e4b6ba {
+      &::after {
+        width: 24px;
+        height: 24px;
+        background: url(../../../public/images/arrow-white-calculator.png) 50% / cover no-repeat !important;
+      }
+    }
+  }
+}

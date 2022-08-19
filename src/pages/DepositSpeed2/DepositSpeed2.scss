@@ -1,0 +1,223 @@
+// wrapper-loans
+
+.wrapper-deposit_speed2 {
+  .main-form {
+    top: 50%;
+    left: 0;
+
+    @media screen and (max-width: 991px) {
+      transform: translateY(40%);
+    }
+  }
+
+  .deposit-container {
+    transform: translateY(-30%);
+
+    @media screen and (max-width: 991px) {
+      transform: translateY(-35%);
+    }
+  }
+
+  .cart {
+    width: 500px;
+    padding: 56px 39px;
+    position: relative;
+    background: transparent;
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      background: rgba(27, 30, 31, 0.7);
+      backdrop-filter: blur(16.3097px);
+      border-radius: 16px;
+    }
+
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      padding: 25px;
+    }
+
+    &__title {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: 0.5px;
+    }
+
+    &__header {
+      margin-bottom: 40px;
+      @media screen and (max-width: 991px) {
+        margin-bottom: 23px;
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-wrap: wrap;
+
+      .cart__rate {
+        margin-left: 60px;
+        &:last-child {
+          display: none;
+        }
+
+        @media screen and (max-width: 991px) {
+          margin-left: 15px;
+        }
+      }
+
+      .cart__data {
+        &:nth-child(3) {
+          margin-top: 30px;
+          letter-spacing: 0.5px;
+          width: 100%;
+          @media screen and (max-width: 991px) {
+            margin-top: 10px;
+          }
+
+          @media screen and (max-width: 400px) {
+            width: 144px;
+          }
+        }
+      }
+
+      span {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        margin-bottom: 2px;
+      }
+
+      @media screen and (max-width: 991px) {
+        grid-gap: 27px 20px;
+
+        span {
+          line-height: 18px;
+        }
+      }
+    }
+
+    &__text {
+      width: 220px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      margin-bottom: 24px;
+      height: 50px;
+
+      @media screen and (max-width: 991px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__data {
+      margin: 0;
+    }
+  }
+
+  .slider {
+    background: url(../../../public/images/depositpSpeed2-pc.png) 50%/cover no-repeat;
+    min-height: 672px;
+  
+    @media screen and (max-width: 991px) {
+      background: url(../../../public/images/depositpSpeed2-mobi.png) 50% no-repeat;
+  
+      background-size: cover;
+      min-height: 340px;
+    }
+  
+    .cart-mini__title {
+      margin-bottom: 34px;
+      font-weight: 400;
+      font-size: 18px;
+    }
+  
+    .cart-mini__items {
+      display: flex;
+    }
+  
+    .cart__content {
+      margin: 0;
+    }
+  }
+
+  .cart-mini {
+    &__inner {
+      margin: 0;
+    }
+  }
+
+  .calculator {
+    &__inner {
+      justify-content: center;
+    }
+    &__form {
+      position: relative;
+      margin: 0;
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background: #ffffff;
+        opacity: 0.1;
+        border-radius: 16px;
+        z-index: -1;
+      }
+    }
+
+    &__description {
+      margin-right: 180px;
+    }
+
+    &__text {
+      max-width: 420px;
+    }
+
+    @media screen and (max-width: 991px) {
+      margin-top: 150px;
+
+      &.calculator-mini {
+        display: none;
+      }
+    }
+  }
+
+  .work {
+    margin-top: 10px;
+    padding: 217px 0 124px;
+    background: url(../../../public/images/deposit_speed1-pc.png) 50% no-repeat;
+
+    &__button {
+      max-width: 260px;
+      height: 64px;
+    }
+
+    &__title {
+      font-weight: 300;
+      letter-spacing: 0.4px;
+    }
+
+    @media screen and (max-width: 991px) {
+      background: url(../../../public/images/deposit_speed1-mobi.png) 50% no-repeat;
+      background-size: cover;
+      padding: 0;
+    }
+  }
+
+  .paizick {
+    margin: 0;
+    &__items {
+      margin: 0;
+    }
+  }
+}

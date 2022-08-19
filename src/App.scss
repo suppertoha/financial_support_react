@@ -1,0 +1,228 @@
+@font-face {
+  font-family: "Outfit";
+  src: local("Outfit SemiBold"), local("Outfit-SemiBold"),
+    url('../public/fonts/Outfit-SemiBold.woff2') format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), local('Roboto-Regular'),
+      url('../public/fonts/Roboto-Regular.woff2') format('woff2'),
+      url('../public/fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Golos';
+  src: local('Golos Text Bold'), local('GolosText-Bold'),
+      url('../public/fonts/GolosText-Bold.woff2') format('woff2'),
+      url('../public/fonts/GolosText-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Golos';
+  src: local('Golos Text Regular'), local('GolosText-Regular'),
+      url('../public/fonts/GolosText-Regular.woff2') format('woff2'),
+      url('../public/fonts/GolosText-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: local('Rubik Bold'), local('Rubik-Bold'),
+      url('../public/fonts/Rubik-Bold.woff2') format('woff2'),
+      url('../public/fonts/Rubik-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: local('Rubik Light'), local('Rubik-Light'),
+      url('../public/fonts/Rubik-Light.woff2') format('woff2'),
+      url('../public/fonts/Rubik-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: local('Rubik Medium'), local('Rubik-Medium'),
+      url('../public/fonts/Rubik-Medium.woff2') format('woff2'),
+      url('../public/fonts/Rubik-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: local('Rubik Regular'), local('Rubik-Regular'),
+      url('../public/fonts/Rubik-Regular.woff2') format('woff2'),
+      url('../public/fonts/Rubik-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input::-moz-placeholder { color: #fff; }
+input::-webkit-input-placeholder { color: #fff; }
+input::-ms-input-placeholder {color: #fff;}
+
+button,
+input,
+textarea {
+  //appearance: none;
+  //-webkit-appearance: none;
+  font-family: inherit;
+  border: none;
+  color: #fff;
+  width: 100%;
+  opacity: 1;
+  color: rgba(255, 255, 255, 1);
+}
+
+button:focus {
+  box-shadow: none !important;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font: 400 22px 'Rubik', sans-serif;
+  color: #ffffff;
+  background: #1B1E1F;
+  font-style: normal;
+  letter-spacing: 0.275px;
+}
+
+a {
+  display: inline-block;
+  font: inherit;
+  color: inherit;
+  transition: 300ms;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a img {
+  border: none;
+  outline: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 0 12px;
+  }
+}
+
+// Block
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #E9271D;
+  height: 40px;
+  width: 100%;
+}
+
+.wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 10;
+}
+
+.form-bg{
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(27.1828px);
+  border-radius: 16px;
+}
+
+.mb1{
+  margin-bottom: 24px;
+}
+
+.mb2{
+  margin-bottom: 56px;
+}
+
+.post{
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(27.1828px);
+  border-radius: 16px;
+  padding: 20px 20px 39px 20px;
+  margin-bottom: 16px;
+
+  &:last-child{
+    margin: 0;
+  }
+
+  &__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__button{
+    display: flex;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,24 @@
+.regulation{
+  background: #F4F4FB;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #2E3539;
+  padding: 28px 0 16px;
+
+  &__image{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
+  &__text{
+    max-width: 100px;
+    margin: 0 auto;
+  }
+
+}

@@ -1,0 +1,220 @@
+// Calculator
+
+.sort {
+  cursor: pointer;
+  position: relative;
+  border-radius: 8px;
+  &__title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 28px;
+
+    @media screen and (max-width: 991px) {
+      font-size: 14px;
+      margin-bottom: 0px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 1;
+    border-radius: 8px;
+    height: 64px;
+    font-weight: 300;
+    font-size: 32px;
+    letter-spacing: 0.4px;
+    color: #ffffff;
+    padding: 0 24px;
+    transition: 300ms;
+    &::placeholder {
+      color: #fff;
+    }
+
+    &.active {
+      //background: #494b4c;
+      border-radius: 8px 8px 0 0;
+    }
+
+    @media screen and (max-width: 991px) {
+      font-weight: 300;
+      font-size: 18px;
+      height: 40px;
+      padding: 0 14px;
+    }
+  }
+
+  &__images {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__items {
+    padding: 8px 0;
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+  }
+
+  &__popup {
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    transition: 300ms;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      z-index: 10;
+    }
+  }
+
+  li {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
+    padding-left: 24px;
+    margin-bottom: 4px;
+    transition: 300ms;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__bg {
+    cursor: pointer;
+    background: #494b4c;
+    position: relative;
+    border-radius: 8px;
+    .sort__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #424448;
+      opacity: 1;
+      border-radius: 8px;
+      height: 64px;
+      font-weight: 300;
+      font-size: 32px;
+      letter-spacing: 0.4px;
+      color: #ffffff;
+      padding: 0 24px;
+      transition: 300ms;
+      &::placeholder {
+        color: #fff;
+      }
+
+      &.active {
+        background: #494b4c;
+        border-radius: 8px 8px 0 0;
+      }
+
+      @media screen and (max-width: 991px) {
+        font-weight: 300;
+        font-size: 18px;
+        height: 40px;
+        padding: 0 14px;
+      }
+    }
+
+    .sort__items {
+      padding: 8px 0;
+      position: absolute;
+      z-index: 10;
+      top: 100%;
+      width: 100%;
+      background: #494b4c;
+      border-radius: 0 0 8px 8px;
+    }
+
+    li {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      margin: 0 8px 4px;
+      padding-left: 24px;
+      transition: 300ms;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &.active {
+        background: #e9271d;
+        border-radius: 8px;
+      }
+
+      @media screen and (max-width: 991px) {
+        height: 40px;
+        padding-left: 10px;
+        font-size: 18px;
+        margin: 0 8px;
+      }
+    }
+  }
+
+  &__transparent {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 16px;
+    width: 510px;
+
+    @media screen and (max-width: 1300px) {
+      width: 400px;
+    }
+
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+    .sort__header {
+      background-color: transparent;
+      opacity: 1;
+      border-radius: 16px;
+      &.active {
+        background-color: transparent;
+        border-radius: 16px 16px 0 0;
+      }
+    }
+
+    .sort__items {
+      padding: 8px 0;
+      position: absolute;
+      z-index: 10;
+      top: 10px;
+      width: 100%;
+      border-radius: 8px;
+      background-color: #424448;
+    }
+
+    li {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      margin: 0 8px 4px;
+      padding-left: 24px;
+      transition: 300ms;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &.active {
+        background: #e9271d;
+        border-radius: 8px;
+      }
+
+      @media screen and (max-width: 991px) {
+        height: 40px;
+        padding-left: 10px;
+        font-size: 18px;
+        margin: 0 8px;
+      }
+    }
+  }
+}

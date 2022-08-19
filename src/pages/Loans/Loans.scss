@@ -1,0 +1,177 @@
+// wrapper-loans
+
+.wrapper-loans {
+
+  .main-form{
+    transform: translateY(-15%);
+    @media screen and (max-width: 991px) {
+      transform: translateY(15%);
+    }
+  }
+
+  .cart{
+
+    width: 400px;
+
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+    &__title{
+      width: 170px;
+
+      @media screen and (max-width: 991px) {
+        width: 140px;
+      }
+    }
+
+    &__header{
+      margin-bottom: 25px;
+
+      @media screen and (max-width: 991px) {
+        margin-bottom: 16px;
+      }
+    }
+
+    &__content{
+      flex-direction: column;
+      justify-content: space-between;
+
+      @media screen and (max-width: 991px) {
+        margin-bottom: 10px;
+        span{
+          display: none;
+        }
+      }
+    }
+
+    &__text{
+      width: 220px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      margin-bottom: 24px;
+      height: 50px;
+
+      @media screen and (max-width: 991px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__data{
+      margin: 0 0 24px;
+      @media screen and (max-width: 991px) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .slider {
+    background: url(../../../public/images/main-loans.png) 50%/cover no-repeat;
+    min-height: 940px;
+    position: relative;
+
+    @media screen and (max-width: 991px) {
+      background: url(../../../public/images/main-depositits2.png) no-repeat;
+
+      background-size: cover;
+      min-height: 410px;
+    }
+
+    .cart-mini__title {
+      margin-bottom: 34px;
+      font-weight: 400;
+      font-size: 18px;
+    }
+
+    .cart-mini__items {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      
+    }
+
+    .cart__content {
+      margin: 0;
+    }
+  }
+
+  .cart-mini{
+    margin-top: 64px;
+    &__inner{
+      margin-top: 60px;
+    }
+  }
+
+
+  .cart-mini-pc {
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  .cart-mini-mobi {
+    display: none;
+    @media screen and (max-width: 991px) {
+      display: block;
+      margin-top: 32px;
+
+      .cart-mini__title {
+        font-weight: 400;
+        font-size: 14px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .banner {
+    margin-top: 250px;
+
+    @media screen and (max-width: 991px) {
+      margin-top: 40px;
+    }
+    &__inner {
+      background: url(../../../public/images/banner-depodits.png) no-repeat;
+      border-radius: 16px;
+      padding: 49px 45px;
+      min-height: 330px;
+      width: 100%;
+      background-size: cover;
+
+      @media screen and (max-width: 991px) {
+        background: url(../../../public/images/banner-depodits2.png) no-repeat;
+        padding: 20px;
+      }
+    }
+
+    &__title {
+      max-width: 416px;
+    }
+
+    @media screen and (max-width: 991px) {
+
+      .cart {
+        &::before {
+          display: none;
+        }
+      }
+
+      .banner__subtitle {
+        line-height: 24px;
+        margin-bottom: 8px;
+      }
+
+      &__inner {
+        background-size: cover;
+      }
+    }
+  }
+
+  .paizick {
+    margin: 0;
+    &__items {
+      margin: 0;
+    }
+  }
+
+}

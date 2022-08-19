@@ -1,0 +1,92 @@
+// Main
+
+.main {
+  z-index: 1;
+
+  &-pc {
+    width: 400px;
+    height: 382px;
+
+    .main__inner {
+      padding: 40px;
+      border-radius: 16px;
+      background: rgba(19, 20, 21, 0.4);
+      backdrop-filter: blur(16.3097px);
+    }
+
+    .main__title {
+      margin-bottom: 34px;
+      font-weight: 400;
+      font-size: 28px;
+    }
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__title {
+    font-family: 'Rubik';
+    font-style: normal;
+  }
+
+  &__data,
+  &__sum {
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+  }
+
+  &__data {
+    margin-bottom: 32px;
+  }
+
+  &__sum {
+    margin-bottom: 40px;
+  }
+
+  &-mobi {
+    display: none;
+
+    .main__content {
+      display: flex;
+    }
+
+    .main__title {
+      font-weight: 500;
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+
+    .main__data,
+    .main__sum {
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+
+      span {
+        font-weight: 400;
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .main__data {
+      margin-right: 35px;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: block;
+      .main__button {
+        display: none;
+      }
+    }
+  }
+
+  &__button {
+    max-width: 290px;
+    height: 56px;
+    margin: 0 auto;
+  }
+}
+

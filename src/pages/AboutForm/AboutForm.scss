@@ -1,0 +1,101 @@
+.wrapper_about {
+  top: -105px;
+
+  .main-form{
+    position: relative;
+    transform: translateY(30%);
+    margin-bottom: 350px;
+
+    @media screen and (max-width: 767px) {
+      transform: translateY(18%);
+      margin-bottom: 150px;
+    }
+
+    &__title{
+      text-align: center;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: 0.5px;
+      margin-bottom: 40px;
+
+      @media screen and (max-width: 991px) {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 48px;
+        margin-bottom: 22px;
+      }
+    }
+
+    &__inner{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        text-transform: lowercase;
+        margin-bottom: 10px;
+      }
+    }
+
+    &__items{
+      width: 620px;
+      margin-bottom: 64px;
+      @media screen and (max-width: 767px) {
+        &.form-bg{
+          padding: 0;
+          background: transparent;
+          backdrop-filter: none;
+        }
+        width: 100%;
+        margin-bottom: 40px;
+      }
+    }
+
+    &__subtitle{
+      font-size: 23px;
+      margin-bottom: 24px;
+    }
+
+    &__button{
+
+      &.btn{
+        justify-content: space-between;
+        padding: 0 32px;
+      }
+
+      width: 176px;
+      height: 64px;
+      font-weight: 500;
+      font-size: 21px;
+      letter-spacing: 0.2625px;
+      cursor: pointer;
+    }
+  }
+
+  // About
+  .slider-about {
+    background: url(../../../public/images/AboutForm.png) 50% / cover no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    @media screen and (max-width: 767px) {
+      background: url(../../../public/images/AboutForm-mobi.png) 50% / cover
+        no-repeat;
+
+      min-height: 480px;
+    }
+  }
+
+  .form-bg{
+    padding: 32px 50px 56px;
+  }
+}
+
+
